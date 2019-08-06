@@ -6,7 +6,11 @@
 @import './globals.scss';
 
 .main-content {
-  padding-top:            1.0rem;
+  padding-top:            1.00rem;
+}
+
+a.navbar-brand {
+  font-size:            1.50rem;
 }
 
 .navbar-background-color {

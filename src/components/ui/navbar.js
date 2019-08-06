@@ -8,7 +8,7 @@ import Config   from '../../config/honeydone-config'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light navbar-background-color navbar-font">
+    <nav className="navbar navbar-expand-md navbar-light navbar-background-color navbar-font">
       <Link to="/" className="navbar-brand">
         {Config.brand}
       </Link>
@@ -25,21 +25,19 @@ const Navbar = () => {
             Home
           </Link>
           <Link 
-            to              = "/about" 
+            to              = "/privacy" 
             className       = "nav-item nav-link"  
             activeClassName = "active"
           >
-            About
+            Privacy
           </Link>
-          { /** 
-              <Link
-                to              = "/contact"
-                className       = "nav-item nav-link"
-                activeClassName = "active"
-              >
-                Contact
-              </Link>
-          */}
+          <Link 
+            to              = "/terms" 
+            className       = "nav-item nav-link"  
+            activeClassName = "active"
+          >
+            Terms
+          </Link>
         </div>
       </div>
     </nav>
