@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       </Helmet>
 
       <Navbar />
-      <div className="main-content container fluid">
+      <div className="main-content container-fluid">
         {children}
       </div>
       <Footer />

@@ -20,17 +20,13 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container-fluid row">
-        <div className="col-5">
-          <h5 className="footer-header">Navigation</h5>
-          <nav className="nav flex-column">
-            <Link to = "/">         Home    </Link>
-            <Link to = "/about">    About   </Link>
-            <Link to = "/privacy">  Privacy </Link>
-            <Link to = "/terms">    Terms   </Link>
+        <div className="col-12">
+          <nav className="nav justify-content-center">
+            <Link className = "nav-link" to = "/">         Home    </Link>
+            <Link className = "nav-link" to = "/about">    About   </Link>
+            <Link className = "nav-link" to = "/privacy">  Privacy </Link>
+            <Link className = "nav-link" to = "/terms">    Terms   </Link>
           </nav>
-        </div>
-        <div className="col-7">
-          <h5 className="footer-header">HoneyDone</h5>
         </div>
       </div>
     </footer>
