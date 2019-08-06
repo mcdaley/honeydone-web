@@ -26,6 +26,7 @@ export default function Footer() {
             <Link to = "/">         Home    </Link>
             <Link to = "/about">    About   </Link>
             <Link to = "/privacy">  Privacy </Link>
+            <Link to = "/terms">    Terms   </Link>
           </nav>
         </div>
         <div className="col-7">
