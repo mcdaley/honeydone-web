@@ -1,0 +1,63 @@
+//-----------------------------------------------------------------------------
+// src/scss/honeydone-bootstrap.scss
+//-----------------------------------------------------------------------------
+
+// Set up custom styles
+@import './globals.scss';
+
+.main-content {
+  padding-top:            1.0rem;
+}
+
+.navbar-background-color {
+  background-color:       $white;
+  border-bottom:          1px solid $border;
+}
+
+.navbar-font {
+  color:                  $darker-green;
+  font-size:              1.20rem;
+  font-weight:            500;
+}
+
+/* Style the footer and its content */
+.footer {
+  padding-left:           0.50rem;
+  padding-bottom:         0.50rem; 
+  margin-left:            3.00rem; 
+  margin-right:           3.00rem;
+  font-size:              0.90rem;
+  border-top:             1px solid $border;
+
+  a {
+    &:link                { color: $darker-green; }
+    &:visited             { color: $darker-green; }
+    &:hover               { color: $darker-gray; text-decoration: underline }
+    &:active              { color: $darker-green; }
+  }
+}
+
+.footer-header {
+  margin-top:             1.50rem;
+  margin-bottom:          0.75rem;
+  font-weight:            400;
+  font-size:              1.10rem;
+}
+
+.error-404-container {
+  margin-bottom:          3.00rem;
+}
+
+//
+// Import Bootstrap and override defaults
+//
+@import '~bootstrap/scss/bootstrap';
+
+html,
+body {
+  height:                 100%;
+  width:                  100%;
+  font-family:            $font-family-sans-serif;
+  color:                  $darker-black;
+}
+
