@@ -6,8 +6,10 @@ import Config       from '../config/honeydone-config'
 export default () => (
   <Layout>
     <div className="row">
-      <h1>About</h1>
-      <p>Lorem ipsum...</p>
+      <div col-12>
+        <h1>About</h1>
+        <p>Lorem ipsum...</p>
+      </div>
     </div>
   </Layout>
 )
