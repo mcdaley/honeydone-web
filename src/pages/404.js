@@ -13,9 +13,11 @@ export default () => (
       <div className="col-12">
         <div className="error-404-container">
           <Link to = "/" className="text-center">
-            <img className  = "img-fluid"
-             width          = "100%" 
-             src            = {errorImg} 
+            <img 
+              className = "img-fluid"
+              width     = "100%" 
+              src       = {errorImg} 
+              alt       = "Oops something went wrong"
             />
           </Link>  
         </div>

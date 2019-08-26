@@ -21,7 +21,7 @@ export default ({ data }) => (
                 From honey-do to HoneyDone
               </h1>
               <p className="tagline-paragraph">
-                HoneyDone is a simpler to-do and checklist application that 
+                HoneyDone is a simple to-do and checklist application that 
                 helps you get stuff done.
               </p>
             </div>
