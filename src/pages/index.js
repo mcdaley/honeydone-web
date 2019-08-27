@@ -13,16 +13,15 @@ import  Layout        from '../components/ui/layout'
 export default ({ data }) => (
   <Layout>
     <div className="row">
-      <div className="col-12 bg">
+      <div className="col-12 green-bg">
         <div className="row">  
           <div className="col-12 col-sm-6">
             <div className="marketing-content">
               <h1 className="tagline-header">
-                From honey-do to HoneyDone
+                From "Honey Do" to HoneyDone
               </h1>
               <p className="tagline-paragraph">
-                HoneyDone is a simple to-do and checklist application that 
-                helps you get stuff done.
+                The super simple, smart ‘to do’ app that helps you get stuff done.
               </p>
             </div>
           </div>
@@ -38,18 +37,25 @@ export default ({ data }) => (
         </div>
       </div>
     </div>
+
     <div className="row marketing-container">
       <div className="col-12 col-sm-6">
         <div className="marketing-content">
           <h2 className="marketing-header">
-            Checklists and To-Dos
+            Set up in a Snap
           </h2>
           <p className="marketing-blurb">
-            Create checklists for your weekly errands, such as groceries
-            or weekly chores.Since we repeat 80% - 90% of our weekly chores,
-            HoneyDone lets you reuse checklists every week by marking the
-            completed items as incomplete instead of creating a new list
-            with the same items every week.
+            Regular weekly tasks, annual maintenance, or special seasonal 
+            to-dos: setting up and saving HoneDone lists is super simple 
+            and done in a snap.
+          </p>
+
+          <h2 className="marketing-header" style={{marginTop: '3.00rem'}}>
+            Weekly Tasks on Autopilot
+          </h2>
+          <p className="marketing-blurb">
+            We repeat 80-90% of our weekly chores.  HoneyDone lets you 
+            quickly set-up and save your go-to checklists for easy access.
           </p>
         </div>
       </div>
@@ -67,6 +73,7 @@ export default ({ data }) => (
 
     <hr/>
 
+    
     <div className="row marketing-container">
       <div className="col-12 col-sm-6">
         <div className="marketing-img-container" style={{paddingTop: 0}}>
@@ -80,20 +87,52 @@ export default ({ data }) => (
       <div className="col-12 col-sm-6">
         <div className="marketing-content">
           <h2 className="marketing-header">
-            Actionable To-Dos
+            Task Helpers at your Fingertips
           </h2>
           <p className="marketing-blurb">
-            Create checklists for seasonal to-dos such as all of your Fall
-            or Spring house cleaning or maintenance. Can't remember who you
-            hired last year to clean your windows or trim your trees last
-            Fall? With HoneyDone just add the window cleaner, tree trimmer,
-            or handyman as a contact to your to-do. HoneyDone to-dos are 
-            fully integrated with your phone contacts. You can even call,
-            email, or text them from HoneyDone.
+            Can’t remember who you hired last year to trim the trees or 
+            clean the gutters? With HoneyDone, contact information 
+            easily integrates with your to-do tasks.  From reviewing 
+            to do tasks to calling, emailing, or texting your 
+            task helper – it’s now just a click away.
           </p>
         </div>
       </div>
     </div>
+
+    <div className="row">
+      <div className="col-12 dark-bg">
+        <div className="row marketing-container">
+          <div className="col-12 col-sm-6">
+            <div className="marketing-content">
+              <h2 className="marketing-header">
+                Use HoneyDone to track and knockout:
+              </h2>
+              <ul className="benefits">
+                <li> Grocery lists</li>
+                <li> Household tasks</li>
+                <li> School supply lists </li>
+                <li> After school activity drop off and pickup schedules </li>
+                <li> Annual household maintenance (window washing, gutter cleaning, and tree trimming)</li>
+                <li> Annual doctor appointments and checkups </li>
+                <li> Holiday shopping and much more...</li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-12 col-sm-6">
+            <div className="marketing-img-container">
+              <Img 
+                className = "d-block w-100" 
+                fluid     = {data.checklistsScreenImage.childImageSharp.fluid} 
+                alt       = "Groceries checklist" 
+                imgStyle  = {{width: '100%', height: '100%'}}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </Layout>
 )
 
@@ -122,6 +161,9 @@ export const homePageQuery = graphql`
       ...fluidHoneyDoneImage
     },
     checklistImage: file(relativePath: {eq: "groceries-short.png"}) {
+      ...fluidHoneyDoneImage
+    },
+    checklistsScreenImage: file(relativePath: {eq: "honeydone-checklists.png"}) {
       ...fluidHoneyDoneImage
     },
   }`
