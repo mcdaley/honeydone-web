@@ -24,6 +24,7 @@ export default function Footer() {
           <nav className="nav justify-content-center">
             <Link className = "nav-link" to = "/">         Home    </Link>
             <Link className = "nav-link" to = "/support">  Support </Link>
+            <Link className = "nav-link" to = "/contact">  Contact </Link>
             <Link className = "nav-link" to = "/privacy">  Privacy </Link>
             <Link className = "nav-link" to = "/terms">    Terms   </Link>
           </nav>
