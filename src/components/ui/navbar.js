@@ -25,18 +25,11 @@ const Navbar = () => {
             Home
           </Link>
           <Link 
-            to              = "/privacy" 
+            to              = "/support" 
             className       = "nav-item nav-link"  
             activeClassName = "active"
           >
-            Privacy
-          </Link>
-          <Link 
-            to              = "/terms" 
-            className       = "nav-item nav-link"  
-            activeClassName = "active"
-          >
-            Terms
+            Support
           </Link>
         </div>
       </div>

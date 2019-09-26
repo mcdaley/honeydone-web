@@ -120,6 +120,15 @@ a.navbar-brand {
   font-size:            1.25rem;
 }
 
+.support-question {
+  font-size:            1.25rem;
+  margin-top:           2.00rem;
+}
+
+.support-answer {
+  font-size:            1.00rem;
+}
+
 
 //
 // Import Bootstrap and override defaults
@@ -133,4 +142,6 @@ body {
   font-family:            $font-family-sans-serif;
   color:                  $darker-black;
 }
-
+strong {
+  color:                  $darker-green;
+}
